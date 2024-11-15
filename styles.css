@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #474e47;
+    color: white;
+    padding: 20px;
+}
+img{
+    border-radius: 8px;
+    object-fit: fill;
+    height: 50%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+h1 {
+    margin-bottom: 10px;
+}
+
+#parks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.park-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 70%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+    display: inline-block;
+}
+
+.park-card h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #474e47;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.park-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.park-button:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+
+.park-button:active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    .park-button {
+        width: 100%;
+        text-align: center;
+    }
+}

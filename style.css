@@ -1,0 +1,187 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #474e47;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+    padding: 10px
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.container{
+    padding: 30px;
+}
+
+.container img{
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    .button-container {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%; 
+        padding: 12px 0; 
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    footer {
+        position: static; 
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav ul {
+        flex-direction: row; 
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 12px 25px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    footer {
+        position: static; 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav ul li {
+        margin: 0 25px; 
+    }
+
+    .btn {
+        padding: 15px 30px; 
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p1 {
+        font-size: 1.2rem;
+    }
+}
